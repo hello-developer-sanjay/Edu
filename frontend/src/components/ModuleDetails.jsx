@@ -14,7 +14,7 @@ function ModuleDetails() {
     async function fetchModuleDetails() {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/courses/${encodeURIComponent(title)}/modules/${encodeURIComponent(module)}`
+          `https://eduxcel-back.onrender.com/api/courses/${encodeURIComponent(title)}/modules/${encodeURIComponent(module)}`
         );
 
        
