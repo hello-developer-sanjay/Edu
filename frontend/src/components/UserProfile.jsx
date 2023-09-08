@@ -81,7 +81,7 @@ const UserProfile = () => {
         <div className="profile-info">
           <div className="profile-image-container">
             <motion.img
-              src={`http://localhost:5000/${userProfile.profileImage}`}
+              src={`https://eduxcel-back.onrender.com/${userProfile.profileImage}`}
               alt="Profile"
               className="profile-image"
               whileHover={{ scale: 1.1 }} // Framer Motion animation on hover
