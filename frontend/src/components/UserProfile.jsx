@@ -18,7 +18,7 @@ const UserProfile = () => {
             throw new Error('Token not found in localStorage');
           }
 
-          const response = await fetch('http://localhost:5000/api/profile', {
+          const response = await fetch('https://eduxcel-back.onrender.com/api/profile', {
             method: 'GET',
             headers: {
               Authorization: `Bearer ${token}`,
