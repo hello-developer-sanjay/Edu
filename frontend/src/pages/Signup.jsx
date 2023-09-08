@@ -29,7 +29,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/signup', formData);
+      const response = await axios.post('https://eduxcel-back.onrender.com/api/signup', formData);
       console.log('Signup success:', response);
       // Handle successful signup (e.g., redirect or show success message)
     } catch (error) {
