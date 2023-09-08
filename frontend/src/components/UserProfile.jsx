@@ -51,7 +51,7 @@ const UserProfile = () => {
   const handleUpdateProfile = async (updatedProfileData) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/api/profile', {
+      const response = await fetch('https://eduxcel-back.onrender.com/api/profile', {
         method: 'PUT',
         headers: {
           Authorization: `Bearer ${token}`,
